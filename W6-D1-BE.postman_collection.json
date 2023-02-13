@@ -47,8 +47,38 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "test product",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "13.5",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "lorem ipsum set",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "fake image",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "electronic",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "https://fakestoreapi.com/products?title=test product&price=13.5&description=lorem ipsum set& image=fake image&category=electronic",
+					"raw": "https://fakestoreapi.com/products",
 					"protocol": "https",
 					"host": [
 						"fakestoreapi",
@@ -56,28 +86,6 @@
 					],
 					"path": [
 						"products"
-					],
-					"query": [
-						{
-							"key": "title",
-							"value": "test product"
-						},
-						{
-							"key": "price",
-							"value": "13.5"
-						},
-						{
-							"key": "description",
-							"value": "lorem ipsum set"
-						},
-						{
-							"key": " image",
-							"value": "fake image"
-						},
-						{
-							"key": "category",
-							"value": "electronic"
-						}
 					]
 				}
 			},
@@ -88,8 +96,23 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "test product",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "15",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "https://fakestoreapi.com/products/7?title=test product",
+					"raw": "https://fakestoreapi.com/products/7",
 					"protocol": "https",
 					"host": [
 						"fakestoreapi",
@@ -98,12 +121,6 @@
 					"path": [
 						"products",
 						"7"
-					],
-					"query": [
-						{
-							"key": "title",
-							"value": "test product"
-						}
 					]
 				}
 			},
